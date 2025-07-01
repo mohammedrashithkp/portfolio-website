@@ -7,9 +7,23 @@ export const ThemeToggle = () => {
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
-        if (storedTheme == "dark") { setIsDarkMode(true); document.documentElement.classList.add("dark"); }
-        else { localStorage.setItem("theme", "light"); setIsDarkMode(false); }
+        if (storedTheme == "dark") {
+            setIsDarkMode(true);
+            document.documentElement.classList.add("dark");
+        }
+        else if (storedTheme == "light") {
+            document.documentElement.classList.remove("dark");
+
+            setIsDarkMode(false);
+        }
+        else {
+            // No preference stored yet — default to dark
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
+            setIsDarkMode(true);
+        }
     }, [])
+
     const toggleTheme = () => {
         if (isDarkMode) {
             document.documentElement.classList.remove("dark");
