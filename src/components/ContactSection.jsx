@@ -56,8 +56,11 @@ export const ContactSection = () => {
                     <div className="space-y-6 justify-center">
                         <div className="flex items-start space-x-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                                <Mail className="h-6 w-6  text-primary" />
-                            </div>
+                               <a href="mailto:mohammedrashithkp@gmail.com"
+className = "card-hover"
+	    > <Mail className="h-6 w-6  text-primary" />
+            </a>                
+	    </div>
                             <div>
                                 <h4 className="font-medium"> Email</h4>
                                 <a href="mailto:mohammedrashithkp@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
@@ -67,7 +70,9 @@ export const ContactSection = () => {
                         </div>
                         <div className="flex items-start space-x-4">
                             <div className="p-3 rounded-full bg-primary/10">
+	    <a href="tel:+91812976999" className="card-hover">
                                 <Phone className="h-6 w-6  text-primary" />
+	    </a>
                             </div>
                             <div>
                                 <h4 className="font-medium"> Phone</h4>
