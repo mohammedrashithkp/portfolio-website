@@ -70,7 +70,7 @@ className = "card-hover"
                         </div>
                         <div className="flex items-start space-x-4">
                             <div className="p-3 rounded-full bg-primary/10">
-	    <a href="tel:+91812976999" className="card-hover">
+	    <a href="tel:+918129766999" className="card-hover">
                                 <Phone className="h-6 w-6  text-primary" />
 	    </a>
                             </div>
@@ -168,6 +168,7 @@ className = "card-hover"
                                 placeholder="Hello,I'd like to talk about ..."
                             />
                         </div>
+	    <div data-netlify-recaptcha="true"></div>
                         <button
                             type="submit"
                             disabled={isSubmitting}
