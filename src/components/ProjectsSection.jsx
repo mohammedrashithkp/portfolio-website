@@ -59,9 +59,9 @@ const projects = [
     {
         id: 7,
         title: "Ros2 Installer Script",
-        description: "Bash script that automates the ROS2 Setup in any Ubuntu based distros",
+        description: "Python package and Bash script for automated ROS 2 setup on Ubuntu-based systems, published to PyPI.",
         githubUrl: "https://github.com/mohammedrashithkp/ros2-installer.git",
-        DemoUrl: 'https://github.com/mohammedrashithkp/ros2-installer.git',
+        DemoUrl: 'https://pypi.org/project/ros2-installer/',
         image: "/projects/Ros2-installer.png",
         tags: ["ROS2", "Bash", "Linux", "Robotics"]
     },
